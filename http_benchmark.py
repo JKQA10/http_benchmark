@@ -26,7 +26,7 @@ class HTTPBenchmark:
             request_type: Type of HTTP request. Defaults to "GET".
             data: Data to be sent in a request. Ignored for GET requests.
             mode: Type of load generation ("burst", "uniform", "exponential"). Defaults to "exponential"
-            avg_jitter: Minimum jitter duration in ms. Used in "uniform" & "exponential" mode. Defaults to 10.
+            avg_jitter: Average jitter duration in ms. Used in "uniform" & "exponential" mode. Defaults to 10.
             logger: Logger object. Defaults to None.
         """
         self.url = url
@@ -79,7 +79,7 @@ class LoadGenerator:
             request_type: Type of HTTP request. Defaults to "GET".
             data: Data to be sent in a request. Ignored for GET requests.
             mode: Type of load generation ("burst", "uniform", "exponential"). Defaults to "exponential"
-            avg_jitter: Minimum jitter duration in ms. Used in "uniform" & "exponential" mode. Defaults to 10.
+            avg_jitter: Average jitter duration in ms. Used in "uniform" & "exponential" mode. Defaults to 10.
         """
         self.url = url
         self.concurrency = concurrency
